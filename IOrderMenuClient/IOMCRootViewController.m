@@ -34,7 +34,7 @@
         
         copyrightNotice = [[UIAlertView alloc] initWithTitle:@"Copyright Notice" message: copyright delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
 
-        // Custom initialization
+
     }
     return self;
 }
@@ -47,6 +47,12 @@
 
 
     [copyrightNotice show];
+    
+    // Here should be the call of the networking with parsing.
+    // The code below shows an menu entry being created and tables added,
+    // which should come from the server instead.
+    // NOT to be removed until server actually sends something!
+    
     IOMCMenuEntry *entry1 = [[IOMCMenuEntry alloc] init];
     
     entry1.name = [NSString stringWithFormat: @"Omlett"];
@@ -73,7 +79,7 @@
     
     [self.navigationController pushViewController:menuView animated:YES];
     [menuView.tableView setDelegate:menuView];
-    // Do any additional setup after loading the view from its nib.
+    
 }
 
 - (void)didReceiveMemoryWarning

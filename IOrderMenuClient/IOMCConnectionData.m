@@ -17,5 +17,6 @@
 @implementation IOMCConnectionData
 
 @synthesize tables, cartContents , comestibles, connectionAddress, table;
+// table should be changed to something correctly fitting to RACE Onthology
 
 @end
